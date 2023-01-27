@@ -33,7 +33,7 @@ img {
 
 main {
     background-color: white;
-    max-width: x;
+    max-width:900px;
     border-radius: 3%;
         
 }
@@ -53,6 +53,7 @@ h1 {
 h2 {
     font-family: var(--default-font);
     font-weight: lighter;
+    font-size: 1em;
     letter-spacing: 0.2em;
     color: var(--color-darkgrayishblue);
     margin: 0 auto;
@@ -99,10 +100,17 @@ div#price2 {
     display: flex;  
     justify-content: center;
 }
+
 .btn-img{
     margin-right: 10px;
     width: auto;
 }
+
+.buyit a:hover {
+    background-color: hsl(158, 43%, 70%);
+    
+}
+
 footer {
     background-color: var(--color-verydarkblue);
     color: white;   
@@ -145,6 +153,7 @@ footer a:hover {
         display: grid; 
         grid-template-columns: 1fr 1fr;
         
+     
         
         
     }
@@ -154,6 +163,43 @@ footer a:hover {
         width: 100%;
         
     }
+    h1 {
+        font-size: 3em;
+        padding: 0px 0px 0px 20px;
+        
+    }
+    h2 {
+        padding: 20px 20px 0px 20px;
+        font-size: 1.1em;
+
+    }
+    article p {
+        font-size: 1.2em;
+        padding: 0px 0px 0px 20px;
+    }
+    div#price1 {
+        font-size: 3em;
+    }
+    div#price2 {
+        font-size: 1.3em;
+    }
+    .btn{
+        font-size: 1.2em;    
+        margin: 30px; 
+        padding: 20px;
+    }
+    
+    .btn-img{
+        margin-right: 10px;
+        width: 8%;
+    }
+    
+    .buyit a:hover {
+        background-color: hsl(158, 43%, 70%);
+        
+    }
+
+
 }
 
 /* acertar para desktop */
