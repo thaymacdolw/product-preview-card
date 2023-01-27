@@ -33,7 +33,7 @@ img {
 
 main {
     background-color: white;
-    max-width:900px;
+    max-width:1000px;
     border-radius: 3%;
         
 }
@@ -187,19 +187,15 @@ footer a:hover {
         font-size: 1.2em;    
         margin: 30px; 
         padding: 20px;
-    }
-    
+    }    
     .btn-img{
         margin-right: 10px;
         width: 8%;
     }
     
-    .buyit a:hover {
-        background-color: hsl(158, 43%, 70%);
-        
-    }
+   
 
 
 }
 
-/* acertar o footer */
+/* acertar o footer  e img aos 770px*/
