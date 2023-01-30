@@ -7,14 +7,14 @@
 
 
 :root {
-    --color-cream:hsl(30, 38%, 92%);
+    --color-cream: hsl(30, 38%, 92%);
     --color-darkcyan: hsl(158, 36%, 37%);
-    --color-verydarkblue:hsl(213, 24%, 19%);
-    --color-darkgrayishblue:hsl(228, 12%, 48%);
-    
+    --color-verydarkblue: hsl(213, 24%, 19%);
+    --color-darkgrayishblue: hsl(228, 12%, 48%);
 
-    --default-font:'Montserrat', sans-serif;
-    --highlight-font:'Fraunces', serif;
+
+    --default-font: 'Montserrat', sans-serif;
+    --highlight-font: 'Fraunces', serif;
 }
 
 
@@ -24,22 +24,23 @@ body {
 
 img {
     width: 100%;
-    border-top-left-radius: 3%; 
+    border-top-left-radius: 3%;
     border-top-right-radius: 3%;
-    
-  
+
+
 }
 
 
 main {
     background-color: white;
-    max-width:1000px;
+    max-width: 900px;
     border-radius: 3%;
-        
+
 }
 
 article {
     padding: 4%;
+
 }
 
 h1 {
@@ -47,7 +48,7 @@ h1 {
     color: var(--color-verydarkblue);
     font-size: 2em;
     line-height: 1em;
-    
+
 }
 
 h2 {
@@ -72,7 +73,7 @@ div.price {
 
 div#price1 {
     font-family: var(--highlight-font);
-    color:var(--color-darkcyan);
+    color: var(--color-darkcyan);
     font-size: 2em;
 }
 
@@ -80,15 +81,16 @@ div#price2 {
     font-size: 1em;
     padding-left: 5px;
     color: var(--color-darkgrayishblue);
-    text-decoration-line: line-through; 
+    text-decoration-line: line-through;
     padding-bottom: 0;
     padding-top: 0;
     position: relative;
     bottom: 0.3rem;
-   
-    
+
+
 }
-.btn{
+
+.btn {
     border-radius: 10px;
     font-family: var(--default-font);
     font-weight: bolder;
@@ -97,103 +99,104 @@ div#price2 {
     background: var(--color-darkcyan);
     padding: 12px 52px 12px 52px;
     text-decoration: none;
-    display: flex;  
+    display: flex;
     justify-content: center;
 }
 
-.btn-img{
+.btn-img {
     margin-right: 10px;
     width: auto;
 }
 
 .buyit a:hover {
     background-color: hsl(158, 43%, 70%);
-    
+
 }
 
-footer {
-    background-color: var(--color-verydarkblue);
-    color: white;   
-    text-align: center;
-    font-size: 0.8em;
-    padding:  2px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-}
-footer a {
-    color: var(--color-darkcyan);
-    font-weight:  bolder;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-    color: var(--color-cream);
-}
 
-@media only screen and (max-width:820px){
+@media only screen and (max-width:600px) {
+
     /*For Mobile phones: */
     main {
         width: 100%;
-        height: auto; 
+        height: auto;
     }
 }
+
 @media only screen and (min-width: 600px) {
+
     /* For tablets: */
     main {
         margin: 3% auto;
-        
-    }    
-        
+
+    }
+
 }
+
 @media only screen and (min-width: 768px) {
+
     /* For desktop: */
     main {
-        display: grid; 
+        display: flex;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:auto;
-        
-     
-        
-        
+
     }
+
+    img,
+    article {
+        line-height: 3em;
+        height: 100%;
+
+    }
+
+    article {
+        width: 60%;
+    }
+
     img {
         border-bottom-left-radius: 3%;
         border-top-right-radius: 0%;
-        width: 100%;
-               
+
+
 
     }
+
     h1 {
         font-size: 3em;
         padding: 0px 0px 0px 20px;
-        
+
     }
+
     h2 {
         padding: 20px 20px 0px 20px;
         font-size: 1.1em;
 
     }
+
     article p {
         font-size: 1.2em;
         padding: 0px 0px 0px 20px;
     }
+
     div#price1 {
         font-size: 3em;
     }
+
     div#price2 {
         font-size: 1.3em;
     }
-    .btn{
-        font-size: 1.2em;    
-        margin: 30px; 
-        padding: 20px;
-    }    
-    .btn-img{
+
+    .btn {
+        font-size: 1.2em;
+        margin: 40px;
+        padding: 15px;
+    }
+
+    .btn-img {
         margin-right: 10px;
-        width: 8%;
-    }    
+        margin-top: 5px;
+        width: 10%;
+        height: 35px;
+    }
 }
 
-/* acertar o footer  e img aos 770px*/
